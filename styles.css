@@ -14,3 +14,36 @@ main {
   margin: 0 auto;
   padding: 1rem;
 }
+legend {
+  color: darkgreen;
+  text-align: center;
+  font-weight: bold;
+}
+fieldset {
+  padding: 2rem;
+  margin-bottom: 1.25rem;
+  border-radius: .5rem;
+}
+input[type="text"] , input[type = "email"], textarea, select {
+    width: 100%;
+    border: 1px solid rgb(20, 20, 20);
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+    padding: .75rem;
+}
+h1 {
+  text-align: center;
+  
+}
+#Order-button {
+   border: none;
+  background-color: darkgreen;
+  color: white;
+  display: block;
+  padding-block: 1rem;
+  margin: 1rem auto;
+  border-radius: .25rem;
+  width: 100%;
+}
+
+
