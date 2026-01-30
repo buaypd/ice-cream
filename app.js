@@ -4,6 +4,8 @@ import express from 'express';
 // Create an instance of an Express application
 const app = express();
 
+app.use(express.static('public'));
+
 // Define the port number where our server will listen 
 const PORT = 3000;
 
@@ -12,7 +14,7 @@ const PORT = 3000;
 // res: allows us to send back a response to the client
 app.get('/', (req, res) => {
     
-    res.send('Welcome to My Ice Cream Shop!');
+    res.sendFile(`${import.meta.dirname}/views/home.html`);
 });
 
 // Start the server and listen on the specified port
