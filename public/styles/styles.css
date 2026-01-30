@@ -46,4 +46,9 @@ h1 {
   width: 100%;
 }
 
+.err {
+    color: darkred;
+    display: none;
+}
+
 
