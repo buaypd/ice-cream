@@ -1,6 +1,6 @@
 alert("Hello, ice cream");
-document.getElementById("ice-cream-form").onsubmit = () => {
-
+document.getElementById("ice-cream-form").onsubmit = (event) => {
+    event.preventDefault();
     clearErrors();
 
     let isValid = true;
@@ -35,8 +35,6 @@ document.getElementById("ice-cream-form").onsubmit = () => {
 
     return isValid;
 }
-
-
 function clearErrors() {
     let errors = document.getElementsByClassName("err");
     for (let i = 0; i < errors.length; i++) {
